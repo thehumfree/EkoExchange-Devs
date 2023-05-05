@@ -1,0 +1,225 @@
+body{
+    font-family: 'Fenix', serif;
+}
+.navbar{
+background-color:rgb(248, 111, 57) !important;
+}
+p{
+    font-weight: 600;
+}
+.sect-1{
+    background-color: rgb(248, 111, 57)!important;
+    border-bottom-right-radius: 400px ;
+    
+}
+.navbar-brand{
+    font-weight: 900;
+    font-size: xx-large;
+}
+.logo-design{
+    color: black !important;
+}
+.sect-2{
+    background-color: rgb(248, 111, 57) !important;
+}
+hr{
+    width: 80% !important;
+    height: 2px !important;
+}
+.card-logo{
+    width: 150px !important;
+    height: 150px !important;
+
+}
+
+.testing {
+    /* max-width: 600px; */
+    margin: 0 auto;
+    padding: 60px 150px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #28a745;;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+input {
+    box-sizing: border-box; 
+    padding: 8px 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 16px; 
+    outline: none; 
+  }
+  
+ 
+  input:focus {
+    border-color: #2b90d9; 
+    box-shadow: 0 0 8px 0 rgba(43,144,217,0.3); 
+  }
+ 
+input[type="radio"] {
+    transition: border-color 0.2s ease-in-out; 
+  }
+
+  input[type="radio"]:checked {
+    border-color: #2b90d9; 
+  }
+  
+  label {
+    display: inline-block; 
+    cursor: pointer;
+  }
+
+  p {
+    margin: 0; 
+    line-height: 1.5; 
+    font-size: 16px; 
+    color: #333;
+  }
+  
+.buybtn{
+    background-color:#28a745 ;
+}
+
+.sellbtn{
+    background-color: red;
+}
+
+.btn.active {
+    background-color: #fff;
+    color: black;      
+}
+
+.adjust{
+    height: 130vh;
+    
+}
+.popup {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.popup.active {
+    display: block;
+}
+
+#btc-address{
+    display: none;
+}
+
+#usdt-address{
+    display: none;
+}
+#bnb-address{
+    display: none;
+}
+#eth-address{
+    display: none;
+}
+#pi-address{
+    display: none;
+}
+
+.upload-form {
+    margin: 20px 0;
+  }
+  .upload-form label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .uplinput {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 14px;
+    
+  }
+  .formfont{
+    font-family: 'Fenix', serif;
+    font-weight: 600;
+  }
+  .uplbtn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .uplbtn:hover {
+    background-color: #0069d9;
+  }
+#text-input{
+    border-color: rgb(204, 201, 201);
+    font-size: larger;
+}.tradeterms{
+    display: inline-block;
+    border: solid 1px rgb(204, 201, 201);
+    width: 90%;
+    overflow-y: scroll;
+}
+.editterms{
+    font-weight: 800;
+}
+
+@media only screen and (max-width: 767px) {
+    .sect-1{
+        background-color: rgb(248, 111, 57)!important;
+        border-bottom-right-radius: 200px ;
+    }
+    .phone-align{
+   text-align: center;
+     
+    }
+    .phone-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .phone {
+        width: 33.33%;
+        justify-content: center;
+    }
+    .card-logo{
+        width: 100px !important;
+        height: 100px !important;
+ }
+  
+ 
+ .adjust{
+    width: 80%;
+    height: 225vh;
+ }
+   
+  }
+  #text-input{
+    width: 90%;
+  }
+  
+  
