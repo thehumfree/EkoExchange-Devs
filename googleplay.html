@@ -49,87 +49,85 @@
                 <div id="popup2" class="col-xs-12 popup active">
                     
                     <form action="/submit-form" name="myForm" id="myform" method="POST" enctype="multipart/form-data">
-                      <h1 class="py-5">Googleplay</h1>
-                        <h2>Enter the amount you are selling in crypto:</h2>
-                        <input type="input" id="amount"  name="amount" placeholder="Write amount here..." required><br />
-                        <h2 class="mt-3">Select Giftcard:</h2>
+                      <h2>Sell Googleplay</h2>
+                      <p>Select Giftcard: <span style="color:#fd0606"><b>*</b></span></p>
+                      <input type="text" name="subject" value="Sell GooglePlay" hidden>
+
+                      <!-- Write the pricing of each giftcard price here!! -->
                         <label>
-                            <input type="radio" name="crypto" value="bitcoin">
-                            USA Google (50-100): <span id="bitcoin-rate"></span><br />
-                            
-                        </label><span id="btc-address">btc address here</span><br>
+                            <input type="radio" name="coin" value="499">
+                            USA Google (50-100): ₦499
+                        </label><br>
                         <label>
-                            <input type="radio" name="crypto" value="usdt">
-                            USA Google ($150-200): <span id="usdt-rate"></span>
-                        </label><span id="usdt-address">usdt address here</span><br>
+                            <input type="radio" name="coin" value="499">
+                            USA Google ($150-200): ₦499
+                        </label><br>
                         <label>
-                            <input type="radio" name="crypto" value="bnb">
-                            USA ($10-$100 Ecode): <span id="bnb-rate"></span>
+                            <input type="radio" name="coin" value="345">
+                            USA ($10-$100 Ecode): ₦345
                         </label><span id="bnb-address">bnb address here</span><br>
                         <label>
-                            <input type="radio" name="crypto" value="ethereum">
-                            UK Google: <span id="eth-rate"></span>
-                        </label><span id="eth-address">eth addresss here</span><br>
+                            <input type="radio" name="coin" value="499">
+                            UK Google: ₦499
+                        </label><br>
                 
                         <label>
-                            <input type="radio" name="crypto" value="pi">
-                            CAD Google: <span id="pi-rate"></span>
-                        </label><span id="pi-address">Pi address here</span><br>
+                            <input type="radio" name="coin" value="334">
+                            CAD Google: ₦334
+                        </label><br>
                         <label>
-                          <input type="radio" name="crypto" value="usdt">
-                          AUD Google: <span id="usdt-rate"></span>
-                      </label><span id="usdt-address">usdt address here</span><br>
+                          <input type="radio" name="coin" value="274">
+                          AUD Google: ₦274
+                      </label><br>
                       <label>
-                          <input type="radio" name="crypto" value="bnb">
-                          Euro Google: <span id="bnb-rate"></span>
-                      </label><span id="bnb-address">bnb address here</span><br>
+                          <input type="radio" name="coin" value="434">
+                          Euro Google: ₦434
+                      </label><br>
                       <label>
-                          <input type="radio" name="crypto" value="ethereum">
-                          CHF Google: <span id="eth-rate"></span>
-                      </label><span id="eth-address">eth addresss here</span><br>
-              
+                          <input type="radio" name="coin" value="387">
+                          CHF Google: ₦387
+                      </label><br>
                       <label>
-                          <input type="radio" name="crypto" value="pi">
-                          KRW Google: <span id="pi-rate"></span>
-                      </label><span id="pi-address">Pi address here</span><br>
-                 <div>
-                    <h2>Converted amount:</h2>
-                    <p id="converted-amount"></p>
-                </div>
-                <div class="py-3" >
-                  <h2>Bank Name</h2>
-                   <input type="text" id="bank-input-field" name="bank-input">
-                </div>
-                <div class="py-3" >
-                  <h2>Account Number</h2>
-                   <input type="text" id="bank-acct-input-field" name="bank-acct-input">
-                </div>
-                <div class="py-3" >
-                  <h2>Customer's Name</h2>
-                   <input type="text" id="bank-cust-input-field" name="bank-cust-input">
-                </div>
+                          <input type="radio" name="coin" value="194">
+                          KRW Google: ₦194
+                      </label><!-- Make sure you update the input value with the pricing -->
+                      <p>Enter the amount you are selling in giftcard: <span style="color:#fd0606"><b>*</b></span></p>
+                      <input type="number" id="amount"  name="amount" placeholder="Enter crypto amount here..." required><br />
+                      <input type="text"   name="sending"  hidden>
+                  <p>Received Amount:</p>
+                  <p id="expect"></p>
+                  <div class="py-3" >
+                    <p>Bank Name <span style="color:#fd0606"><b>*</b></span></p>
+                    <input type="text" id="bank-input-field" name="bankName" placeholder="Access Bank" required>
+                  </div>
+                  <div class="py-3" >
+                    <p>Account Number <span style="color:#fd0606"><b>*</b></span></p>
+                    <input type="tel" id="bank-acct-input-field" name="bankAcc" placeholder="0123456789" required>
+                  </div>
+                  <div class="py-3" >
+                    <p>Bank Accounts Name <span style="color:#fd0606"><b>*</b></span></p>
+                    <input type="text" id="bank-cust-input-field" name="cusName" placeholder="Joe Doe" required>
+                  </div>
                 <div class="py-3">
-                     <label class="formfont" for="file-upload">Choose a file to upload:</label>
-                     <input class="uplinput" type="file" id="file-upload" name="file">
-                     <button class="uplbtn" type="submit">Upload File</button>
-                   </div>
-                   <div class="py-3">
-                     <label class="d-block formfont" for="text-input">Card Denomination(Optional)</label>
-                     <textarea id="text-input" name="message" rows="4" cols="70" placeholder="Please input your card denominations or blurry cards codes e.g $25*4, $50*5, $100*10"></textarea>
-   
-                   </div>
-                   <div class="py-3">
-                     <h3>Trade Terms</h3>
-                     <input type="checkbox" id="checkbox">
-                     <label class="py-2" for="checkbox">Statement of Legality</label>
-                     <div class="tradeterms">
-                       <p style="color: black;font-weight: 100; margin-left: 3px;">You hereby warrant, assure, represent and state that the items you are transacting on, selling, loading or offering for sale on this website(Gchub.ng) was acquired through legal means. You further state that you did not in any manner act as agent or alter ego of the Website in the acquisition of the items. You hereby, specifically state that the items were not stolen or obtained through fraudulent means. <br>
-                         <span class="editterms">Note: ₦30 bank transfer charge will be deducted.</span> We won't be held responsible for funding a wrong <span class="editterms">Account Number</span> provided by you. Pls crosscheck the info you filled. <br>
-                         By Clicking the <span class="editterms">"Sell Now"</span> button, you agree that you have read and agreed to our Terms of Service and you understand that all transfers are final and cannot be reversed.</p>
-                     </div>
-                   </div>
-                   <input style="padding: 20px 40px; background-color: #28a745; color: #fff;" id="submit-btn" type="submit" value="Sell">
-                 </form>
+                   <label class="formfont" for="file-upload">Upload giftcard image <sup style="font-size: 8px;">(JPG, PNG only)</sup>: <span style="color:#fd0606"><b>*</b></span></label>
+                   <input class="uplinput" type="file" id="file-upload" name="card-image">
+                 </div>
+                 <div class="py-3">
+                   <label class="d-block formfont" for="text-input">Card Denomination(Optional)</label>
+                   <textarea id="text-input" name="message" rows="4" cols="70" placeholder="Please input your card denominations or blurry cards codes e.g $25*4, $50*5, $100*10"></textarea>
+                 </div>
+                 <div class="py-3">
+                  <h3>Trade Terms <span style="color:#fd0606"><b>*</b></span></h3>
+                  <input type="checkbox" id="checkbox">
+                  <label class="py-2" for="checkbox">Statement of Legality</label>
+                  <div class="tradeterms">
+                    <p style="color: black;font-weight: 100; margin-left: 3px;">You hereby warrant, assure, represent and state that the items you are transacting on, selling, loading or offering for sale on this website(Gchub.ng) was acquired through legal means. You further state that you did not in any manner act as agent or alter ego of the Website in the acquisition of the items. You hereby, specifically state that the items were not stolen or obtained through fraudulent means. <br>
+                      <span class="editterms">Note: ₦30 bank transfer charge will be deducted.</span> We won't be held responsible for funding a wrong <span class="editterms">Account Number</span> provided by you. Pls crosscheck the info you filled. <br>
+                      By Clicking the <span class="editterms">"Sell Now"</span> button, you agree that you have read and agreed to our Terms of Service and you understand that all transfers are final and cannot be reversed.</p>
+                  </div>
+                </div>
+                <input style="padding: 20px 40px; background-color: #fd0606; color: #fff;" id="submit-btn" type="submit" value="Sell">
+               </form>
                    </div>
                 </div>
                 </div>
@@ -159,78 +157,7 @@
         </div>
         </div>
       </footer>
-      <script>
-        const radios = document.forms["myForm"].elements["crypto"];
-        const amount = document.getElementById("amount")
-        const btcaddress = document.getElementById("btc-address")
-        const ethaddress = document.getElementById("eth-address")
-        const usdtaddress = document.getElementById("usdt-address")
-        const bnbaddress = document.getElementById("bnb-address")
-        const piaddress = document.getElementById("pi-address")
-        
-        const receive = document.getElementById("converted-amount");
-        const apibtc = 28910;
-        const btc = 780;
-        const eth = 760;
-        const usdt = 750;
-        const bnb = 740;
-        const pi = 100;
-        
-        const btcrate = document.getElementById("bitcoin-rate");
-        const ethrate = document.getElementById("eth-rate");
-        const usdtrate = document.getElementById("usdt-rate");
-        const bnbrate = document.getElementById("bnb-rate");
-        const pirate = document.getElementById("pi-rate");
-        btcrate.innerHTML= btc;
-        ethrate.innerHTML= eth;
-        usdtrate.innerHTML= usdt;
-        bnbrate.innerHTML= bnb;
-        pirate.innerHTML= pi;
-
-         
-            amount.addEventListener('input', (event)=>{
-                radios[0].onclick = ()=>{
-                    btcaddress.style.display = 'block'
-                    ethaddress.style.display = 'none'
-                    usdtaddress.style.display = 'none'
-                    bnbaddress.style.display = 'none'
-                    piaddress.style.display = 'none'
-                    receive.innerHTML ="₦" + event.target.value * apibtc * btc  + "NGN"
-                }
-                radios[1].onclick = ()=>{
-                    btcaddress.style.display = 'none'
-                    ethaddress.style.display = 'none'
-                    usdtaddress.style.display = 'block'
-                    bnbaddress.style.display = 'none'
-                    piaddress.style.display = 'none'
-                    receive.innerHTML = "₦"+ event.target.value * usdt + "NGN"
-                }
-                radios[2].onclick = ()=>{
-                    btcaddress.style.display = 'none'
-                    ethaddress.style.display = 'none'
-                    usdtaddress.style.display = 'none'
-                    bnbaddress.style.display = 'block'
-                    piaddress.style.display = 'none'
-                    receive.innerHTML = "₦"+ event.target.value * bnb + "NGN"
-                }
-                radios[3].onclick = ()=>{
-                    btcaddress.style.display = 'none'
-                    ethaddress.style.display = 'block'
-                    usdtaddress.style.display = 'none'
-                    bnbaddress.style.display = 'none'
-                    piaddress.style.display = 'none'
-                    receive.innerHTML = "₦"+ event.target.value * eth + "NGN"
-                }
-                radios[4].onclick = ()=>{
-                    btcaddress.style.display = 'none'
-                    ethaddress.style.display = 'none'
-                    usdtaddress.style.display = 'none'
-                    bnbaddress.style.display = 'none'
-                    piaddress.style.display = 'block'
-                    receive.innerHTML = "₦"+ event.target.value * pi + "NGN"
-                }
-            })
-      </script>
+      <script src="validatePrice.js"></script>
       <script src="index.js"></script>
 </body>
 </html>
