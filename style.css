@@ -108,7 +108,7 @@ input[type="radio"] {
 }
 
 .adjust{
-    height: 130vh;
+    /* height: 130vh; */
     
 }
 .popup {
@@ -214,12 +214,17 @@ input[type="radio"] {
  
  .adjust{
     width: 80%;
-    height: 225vh;
+    /* height: 225vh; */
  }
    
   }
   #text-input{
     width: 90%;
   }
+  ul{
+ 
+    right: 0 !important;
+    left: auto !important;
+  } 
   
   
