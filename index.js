@@ -1,10 +1,12 @@
 function validateForm(event) {
   const checkbox = document.getElementById("checkbox");
+  const fileUpload = document.getElementById("file-upload");
+  if (fileUpload.files.length === 0) {
+    alert("Please Upload Gift Card Image!!");
+  }
   if (!checkbox.checked) {
     event.preventDefault();
-    alert(
-      "Please accept the Trading terms!!"
-    );
+    alert("Please accept the Trading terms!!");
   }
 }
 const btn1 = document.getElementById("btn1");

@@ -47,7 +47,7 @@
                 </div>
                 <div id="popup2" class="col-xs-12 popup active">
                     <h2>Select a crypto currency:</h2>
-                    <form action="/submit-form" name="myForm" id="myform" method="POST" enctype="multipart/form-data">
+                    <form action="/submit-form" name="myForm" id="myform" method="POST" enctype="multipart/form-data" onsubmit="validateForm(event)">
                         <h2>Enter the amount you are selling in crypto:</h2>
                         <input type="input" id="amount"  name="amount" required><br />
                         <label>
